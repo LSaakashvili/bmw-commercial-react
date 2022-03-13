@@ -1,0 +1,50 @@
+#angels-img{
+    width:60vw;
+    height:24vw;
+    margin-left:-4vw;
+    opacity:0;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../images/bmw2.jpg");
+    animation-name: angels1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    animation-duration: 2.5s;
+    margin-top:5vw !important;
+}
+
+#right-side{
+    text-align: right;
+}
+
+#right-side > p{
+    font-size:1.7vw;
+    width:32vw;
+    text-align: right;
+    animation-name: slide-left1;
+    animation-duration: 3s;
+}
+
+#right-side > h1{
+    font-size:5vw;
+    animation-name: slide-left1;
+    animation-duration: 3s;
+}
+
+@keyframes angels1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.55;
+    }
+}
+
+@keyframes slide-left1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

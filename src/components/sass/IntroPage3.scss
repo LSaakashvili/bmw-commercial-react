@@ -1,0 +1,54 @@
+h3{
+    color:red;
+    font-size: 4vw;
+    margin-left:2vw;
+    margin-bottom: 0px;
+    animation-name: levana;
+    animation-duration: 2s;
+}
+
+p{
+    animation-name: levana;
+    animation-duration: 2s;
+}
+
+#Introduction{
+    width: 100%;
+}
+
+#left-side{
+    margin-top:-4.5vw;
+}
+
+#left-side > div > h1{
+    font-size:9vw;
+}
+
+
+#left-side> div >p{
+    font-size:1.7vw;
+}
+
+#right-side{
+    justify-self: right;
+}
+
+#whitebmw{
+    width:37vw;
+    height:18vw;
+    background-image: url("../../images/bmw3.png");
+    background-size: cover;
+    background-position: center;
+    justify-self: right;
+    animation-name: levana;
+    animation-duration: 2.5s;
+}
+
+@keyframes levana{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

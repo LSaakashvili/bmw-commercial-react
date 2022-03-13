@@ -1,0 +1,42 @@
+#HistoryPage{
+    font-family: "Share Tech";
+    padding:3.5vw;
+    position: fixed;
+    opacity: 1;
+    user-select: none;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#HistoryPage > #left-side > div > b{
+    font-size:6.2vw;
+    text-align: left;
+    animation-name: bold;
+    animation-duration: 1.2s;
+}
+
+#HistoryPage > #left-side > div{
+    margin-top:-6vw;
+    text-align: left;
+}
+
+#HistoryPage > div > button{
+    margin-top:5vw;
+}
+
+
+#HistoryPage > #right-side{
+    margin-right: 10vw;
+    justify-self: right;
+}
+
+@keyframes bold{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+

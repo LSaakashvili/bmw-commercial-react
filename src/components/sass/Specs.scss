@@ -1,0 +1,96 @@
+#Specs{
+    width: 100%;
+
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Share Tech";
+    padding:0vw 4vw 0vw 0vw;
+}
+
+#gray-area{
+    width:42vw;
+    height:28vw;
+    position: absolute;
+    bottom: 0px;
+    background-color: #0C0C0C;
+}
+
+#bmw-img-specs{
+    width:42vw;
+    height: 18vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../../images/bmw1.png");
+    transform: scaleX(-1);
+    margin-top:23vw;
+    margin-left: 8vw;
+    animation-name: slide-left;
+    animation-duration: 1s;
+}
+
+@keyframes slide-left{
+    from{
+        margin-top:29vw;
+    }
+    to{
+        margin-top: 23vw;
+    }
+}
+
+#Specs > #right-side > #bold > b {
+    font-size:3.5vw;
+    text-align: right;
+    font-weight: 200;
+    animation-name: bold;
+    animation-duration: 1.2s;
+    text-align: right;
+}
+
+#Specs > #right-side{
+    width:50vw;
+    padding-top:12vw;
+    display: flex;
+    padding-right: 4vw;
+    align-items: right;
+    justify-content: right;
+    justify-self: right;
+}
+
+#Specs > #right-side > #bold{
+    width:29vw;
+    text-align: right;
+    justify-self: right;
+}
+
+#Specs > #right-side > #bold > p{
+    font-size:1.2vw;
+}
+
+small{
+    font-size:1vw;
+}
+
+@keyframes slide-right{
+    from{
+        margin-left:0vw;
+    }
+    to{
+        margin-left:8vw;
+    }
+}
+
+#HistoryPage > #right-side{
+    animation-name:"slide-right";
+    animation-duration: 2s;
+}
+
+@keyframes slide-right{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

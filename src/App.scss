@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruluko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Ruluko', sans-serif;
+}
+
+h1{
+  user-select: none;
+  cursor: default;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#BlackBackground{
+  min-width: 100%;
+  min-height: 100vh;
+  max-height: 1500px;
+  max-width: 100%;
+  background-color: black;
+  align-items: center;
+  display: flex;
+  overflow: hidden !important;
+}
+
+#CustomCursor{
+  z-index:1000;
+  left:0px;
+  top:0px;
+  position: fixed;
+  pointer-events: none;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+  transform: translate3d(0, 0, 0);
+  border-radius: 50%;
+}
+
+#CustomCursorN{
+  z-index:1000;
+  left:0px;
+  top:0px;
+  position: fixed;
+  pointer-events: none;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+  transform: translate3d(0, 0, 0);
+  border-radius: 50%;
+  border:3px solid white;
+}
+
+button{
+  width:25vw;
+  height:4.2vw;
+  font-size:1.4vw;
+  align-self: left;
+  margin-left:0px;
+  transition:0.8s;
+  border:4px solid white;
+}
+
+button:hover{
+  cursor: default;
+  background-color:black;
+  color: white;
+}
+
+#left-side{
+  justify-content: left;
+  justify-items: left;
+  justify-self: left;
+  transition: 1s;
+}
+
+#right-side{
+  justify-content: right;
+  justify-items: right;
+  justify-self: right;
+  transition: 1s;
+}
+
+nav{
+  position: absolute;
+  display: grid;
+  width: 95%;
+  top:3vw;
+  grid-template-columns: 1fr 1fr;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-self: right;
+  margin-top:20px;
+}
+
+#ul{
+  list-style: none;
+  display: flex;
+  transition:4s;
+  animation-name: vaxo;
+  animation-duration: 1.5s;
+}
+
+li{
+  transition:4s;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  margin-left:50px;
+  font-size:20px;
+  transition:4s;
+}
+
+a:hover{
+  color: white;
+
+}
+
+#hamburger{
+  justify-self: right;
+  margin-left:15vw;
+  margin-top:-9px !important;
+}
+
+@keyframes vaxo{
+  from{
+    opacity: 0;
+    margin-right:-200px !important;
+  }
+  to{
+    opacity: 100;
+    margin-left: 0px !important;
+  }
+}

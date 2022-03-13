@@ -1,0 +1,75 @@
+
+body{
+    color:white;
+}
+
+#Introduction{
+    display: grid;
+    font-family: 'Share Tech', sans-serif;
+    grid-template-columns: 1fr 1fr;
+    padding:4vw;
+    overflow: hidden !important;
+}
+
+#Introduction > #left-side h1{
+    display: block;
+    align-items: left;
+    align-content: left;
+    font-size:5.8vw;
+    text-align: left;
+    max-width: 75%;
+    transition:1s;
+    animation-name:h1;
+    animation-duration:2s;
+}
+
+#bmw-img{
+    width:47vw;
+    height:19vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../images/bmw1.png");
+    margin-top:10vw;
+    animation-name:bmwimg;
+    animation-duration: 3s;
+    transition: 1s;
+}
+
+button{
+    animation-name:button;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-duration:2s;
+    transition: 1s;
+    cursor: pointer !important;
+}
+
+
+
+@keyframes h1{
+    from{
+        margin-left:-200px;
+    }
+    to{
+        margin-left:0px;
+    }
+}
+
+@keyframes button{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes bmwimg{
+    from{
+        margin-right:-150px;
+    }
+    to{
+        margin-right:0px;
+    }
+}
